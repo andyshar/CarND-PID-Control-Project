@@ -43,7 +43,7 @@ int main()
   double init_speed_pid_kp = 0.1;
   double init_speed_pid_ki = 0.0001;
   double init_speed_pid_kd = 1.0;
-  pid_speed.Init(init_speed_pid_kp, init_speed_pid_ki, init_speed_pid_kd)
+  speed_pid.Init(init_speed_pid_kp, init_speed_pid_ki, init_speed_pid_kd)
 
   h.onMessage([&pid. &speed_pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
